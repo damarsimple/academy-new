@@ -6,12 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc -w",
+    "typegen": "sgts -e http://192.168.1.216:8000/graphql -o ./types/type.ts --customScalars '{\"DateTime\": \"string\",\"Mixed\" : \"any\"}'"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@fontsource/roboto": "^4.5.1",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/material": "^5.0.3",
+    "@mui/styles": "^5.0.1",
+    "@mui/x-data-grid": "^5.0.0-beta.3",
+    "@mui/x-data-grid-generator": "^4.0.1",
+    "@types/lodash": "^4.14.175",
+    "graphql": "^15.6.1",
+    "lodash": "^4.17.21",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-toastify": "^8.0.3"
   },
   "devDependencies": {
     "@types/react": "17.0.29",
